@@ -6,6 +6,9 @@
 (setq ns-command-modifier 'meta)
 (setq mac-option-modifier 'super)
 
+;; Mac OS X full screen support
+(global-set-key (kbd "M-n") 'ns-toggle-fullscreen)
+
 ;; nice scrolling
 (setq scroll-margin 0
       scroll-conservatively 100000
