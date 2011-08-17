@@ -1,0 +1,4 @@
+#contributor : Norbert Wojtowicz <wojtowicz.norbert@gmail.com>
+#name : <%= ... %>
+# --
+<%= $1 %>
