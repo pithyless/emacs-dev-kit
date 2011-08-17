@@ -31,4 +31,7 @@
 (require 'haml-mode)
 (require 'scss-mode)
 
+;; Textmate
+(require 'textmate)
+
 (provide 'ruby-config)
