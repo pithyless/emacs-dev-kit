@@ -31,6 +31,14 @@
 (require 'haml-mode)
 (require 'scss-mode)
 
+;; Ruby ERB
+(defun rhtml-mode-hook ()
+  (autoload 'rhtml-mode "rhtml-mode" nil t)
+  (add-to-list 'auto-mode-alist '("\\.erb\\'" . rhtml-mode))
+  (add-hook 'rhtml-mode '(lambda ()
+                           (define-key rhtml-mode-map (kbd "M-s") 'save-buffer))))
+(require 'rhtml-mode)
+
 ;; Textmate
 (require 'textmate)
 (require 'peepopen)
