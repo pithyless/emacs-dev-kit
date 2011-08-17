@@ -11,6 +11,16 @@
 ;; mimic popular IDEs binding, note that it doesn't work in a terminal session
 (global-set-key [(shift return)] 'insert-empty-line)
 
+;; delete whole line
+(defun delete-whole-line ()
+  (interactive)
+  (let ((beg (progn (forward-line 0)
+                    (point))))
+    (forward-line 1)
+    (delete-region beg (point))))
+
+(global-set-key (kbd "C-M-k") 'delete-whole-line)
+
 ;; move line up
 (defun move-line-up ()
   (interactive)
