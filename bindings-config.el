@@ -30,6 +30,10 @@
 (global-set-key (kbd "C-x ^") 'join-line)
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
+;; Comment / Uncomment line or region
+(global-set-key (kbd "C-M-;") 'comment-dwim)
+(global-set-key (kbd "M-;") 'comment-or-uncomment-region-or-line)
+
 ;; Start proced in a similar manner to dired
 (global-set-key (kbd "C-x p") 'proced)
 
