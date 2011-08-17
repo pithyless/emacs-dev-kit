@@ -33,5 +33,13 @@
 
 ;; Textmate
 (require 'textmate)
+(require 'peepopen)
+(defun is-rails-project ()
+  (when (textmate-project-root)
+    (file-exists-p (expand-file-name "config/environment.rb" (textmate-project-root)))))
+(defun peepopen-bind-ns-keys ()
+  (define-key *textmate-mode-map* [(meta o)] 'peepopen-goto-file-gui))
+(textmate-mode)
+(setq ns-pop-up-frames nil)
 
 (provide 'ruby-config)
