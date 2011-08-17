@@ -8,7 +8,7 @@
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
 
 ;; Font size
-(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C-=") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
 
 ;; Jump to a definition in the current file. (This is awesome.)
