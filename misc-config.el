@@ -9,6 +9,9 @@
 ;; Mac OS X full screen support
 (global-set-key (kbd "M-n") 'ns-toggle-fullscreen)
 
+;; visible bell, please
+(setq visible-bell t)
+
 ;; nice scrolling
 (setq scroll-margin 0
       scroll-conservatively 100000
