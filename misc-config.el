@@ -1,6 +1,11 @@
 ;;; miscellaneous configuration that doesn't
 ;;; belong to any particular place
 
+;; working on a Mac
+(setq default-input-method "MacOSX")
+(setq ns-command-modifier 'meta)
+(setq mac-option-modifier 'super)
+
 ;; nice scrolling
 (setq scroll-margin 0
       scroll-conservatively 100000
